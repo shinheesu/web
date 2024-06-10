@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Hero Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?nature,photography') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh; /* Viewport height to fill the screen */
+        }
+        .card {
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-title, .card-subtitle, .card-text {
+            color: black; /* Card content color */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1 class="display-4">사진공유 페이지</h1>
+            <p class="lead">감성 사진을 공유합니다</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Main Content</h2>
+                <p>This is where your main content will go.</p>
+            </div>
+        </div>
+
+        <!-- Cards Section -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x300/?landscape" class="card-img-top" alt="자연풍경 사진">
+                    <div class="card-body">
+                        <h5 class="card-title">자연풍경 사진</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">여행사진</h6>
+                        <p class="card-text">여행가서 찍은 풍경사진 입니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x300/?travel" class="card-img-top" alt="여행 사진">
+                    <div class="card-body">
+                        <h5 class="card-title">여행 사진</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">여행사진</h6>
+                        <p class="card-text">여행지에서 찍은 멋진 사진입니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x300/?beach" class="card-img-top" alt="해변 사진">
+                    <div class="card-body">
+                        <h5 class="card-title">해변 사진</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">여행사진</h6>
+                        <p class="card-text">해변에서 찍은 아름다운 사진입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <p class="text-center">&copy; 2024 Your Company</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
